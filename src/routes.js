@@ -17,6 +17,7 @@ import LoginPage from './components/LoginPage';
 import RegisterPage from './components/RegisterPage';
 import NotFoundPage from './components/NotFoundPage';
 import ErrorPage from './components/ErrorPage';
+import MyComp from './components/mycomp/mycomp';
 
 const router = new Router(on => {
   on('*', async (state, next) => {
@@ -27,6 +28,8 @@ const router = new Router(on => {
   on('/contact', async () => <ContactPage />);
 
   on('/login', async () => <LoginPage />);
+
+  on('/mycomp', async () => <MyComp />);
 
   on('/register', async () => <RegisterPage />);
 
